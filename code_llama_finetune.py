@@ -13,8 +13,8 @@ from peft import (
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer, DataCollatorForSeq2Seq
 from datasets import load_dataset
 
-local_model_path = "/dataset/CodeLlama-7b-hf/"
-local_data_path = "/dataset/datasets/sql_datasets/sql_context_dataset.json"
+local_model_path = "/codellama-7b-hf"
+local_data_path = "/dataset/sql_context_dataset.json"
 batch_size = 32
 per_device_train_batch_size = 16
 gradient_accumulation_steps = batch_size // per_device_train_batch_size
