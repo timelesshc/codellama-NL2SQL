@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
-local_model_path = "/dataset/CodeLlama-7b-hf/"
+local_model_path = "codellama-7b-hf"
 
 tokenizer = AutoTokenizer.from_pretrained(local_model_path)
 
